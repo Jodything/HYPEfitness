@@ -1,4 +1,4 @@
-import os
+import os   
 from django.conf import settings
 
 DEBUG = False
