@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -25,10 +26,31 @@
 </head>
 
 <body>
+    <!-- facebook sdk -->
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1539941566238156',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+        };
 
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+        </script>
+    <!-- end facebook sdk -->
+    
+    
     {% block content %}
     {% endblock %}
-    <footer>
+    
+    <footer>        
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-12">
@@ -39,6 +61,7 @@
             </div>
         </div>
     </footer>
+    
     <!-- Core JavaScript Files -->
     <script src="http://bootstraptaste.com/theme/lonely/js/jquery.min.js"></script>
     <script src="http://bootstraptaste.com/theme/lonely/js/bootstrap.min.js"></script>

@@ -300,7 +300,7 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	background: url('/static/img/groupbw.png') no-repeat top center;
+	background: url('/static/img/groupblurbw.png') no-repeat top center;
 	background-size: cover;
 }
 
