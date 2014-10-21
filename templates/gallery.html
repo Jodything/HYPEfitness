@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+<!-- Section: gallery -->
+    <section id="gallery" class="home-section text-center bg-gray">
+
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="wow bounceInDown" data-wow-delay="0.4s">
+                    <div class="section-heading">
+                        <h2>My photo gallery</h2>
+                        <p style="color: #2f2c2c">What working hard looks like</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+                    <div class="wow bounceInUp" data-wow-delay="0.4s">
+                    <div id="owl-works" class="owl-carousel">
+                        <div class="item"><a href="{% static 'img/sitpole.png' %}" title="This is an image title" data-lightbox-gallery="gallery1"><img src="{% static 'img/sitpole.png' %}" class="img-responsive" alt="img"></a></div>
+                        <div class="item"><a href="{% static 'img/back.jpg' %}" title="This is an image title" data-lightbox-gallery="gallery1"><img src="{% static 'img/back.jpg' %}" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="{% static 'img/what.png' %}" title="This is an image title" data-lightbox-gallery="gallery1"><img src="{% static 'img/what.png' %}" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="{% static 'img/pullup.jpg' %}" title="This is an image title" data-lightbox-gallery="gallery1"><img src="{% static 'img/pullup.jpg' %}" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="{{ pic_one }}" title="{{ pic_one_title }}" data-lightbox-gallery="gallery1"><img src="{{ pic_one }}" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="{{ pic_two}}" title="{{ pic_two_title }}" data-lightbox-gallery="gallery1"><img src="{{ pic_two }}" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="{{ pic_three }}" title="{{ pic_three_title }}" data-lightbox-gallery="gallery1"><img src="{{ pic_three }}" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="{{ pic_four }}" title="{{ pic_four_title }}" data-lightbox-gallery="gallery1"><img src="{{ pic_four }}" class="img-responsive " alt="img"></a></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section: gallery -->
