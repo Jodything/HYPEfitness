@@ -1,8 +1,10 @@
+import os
 from facepy import GraphAPI
 
 from django.shortcuts import render
 
-graph = GraphAPI('CAAYXPWliuA0BAPyeYh5yLxC2lfO1vi1Jl6vYWeERDp2ro7bX9fX3grVW85mZAZBickePM07OHj7vHfxOf2SaTcM3G7kCcJvzR44ntfY2tzhpFxXqRP5RwYmmH4VDwV7pZB7Clhgr57IUiZBSbf0ZCyMK02THHIy0kpcgEZACpEP7Rqg2KpZC442TZBmCglhnFgJ7wevkBnoX2FCe3dD1LRSc')
+FB_AUTH = os.environ.get('FB_AUTH')
+graph = GraphAPI(FB_AUTH)
 # url = 'https://graph.facebook.com/oauth/access_token?client_id=1714402388785165&client_secret=cbcd3b94455a534eacb85750afcd4e83&grant_type=fb_exchange_token&fb_exchange_token=CAAYXPWliuA0BABBBnZBSxScEBwcezHFIRpcm5xRc5Rj4QNhzIVedzrfXP0hrFz8kztZBd88OHJ2FFocmgHP0XzCjQM3lLq2r7FDxXOSo3Cnfj1lJmXDK78vtaYdNpb8CPGhgzy1KHpjiRdDAiBfHZBfUBUv7mNjNCdpASz5RcujkLrcdb6PcQaV1tFJYEgZD'
 
 
