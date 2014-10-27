@@ -2,4 +2,5 @@
 .DS_Store
 db.sqlite3
 em/settings/local.py
+em/settings/base.py
 .env
