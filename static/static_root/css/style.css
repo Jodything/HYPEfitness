@@ -453,6 +453,8 @@ Parallax
 #separator {
 	background-image: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10258363_274906009357932_5350294042609191231_n.jpg?oh=177ac33586d6ec3c2bef05b4059af270&oe=54BB391C&__gda__=1417915044_f3af2191e21569a8590c14fd2880aab8);
     width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #separator .icon {
@@ -650,7 +652,3 @@ a.btn:hover {
     max-width: 50%;
     height: auto;
 }
-
-
-
-
